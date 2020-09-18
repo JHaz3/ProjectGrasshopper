@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B24B2794A1517AC1C4DE0A9 /* Pods_MySmashHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AE75D08475E1677B98E13B /* Pods_MySmashHub.framework */; };
 		EBBF0BF425145A4900389AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF0BF325145A4900389AF1 /* AppDelegate.swift */; };
 		EBBF0BF625145A4900389AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF0BF525145A4900389AF1 /* SceneDelegate.swift */; };
 		EBBF0BFB25145A4900389AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBF0BF925145A4900389AF1 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06AE75D08475E1677B98E13B /* Pods_MySmashHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySmashHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64AA06ADA9E24DEADD9A3FAE /* Pods-MySmashHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySmashHub.debug.xcconfig"; path = "Target Support Files/Pods-MySmashHub/Pods-MySmashHub.debug.xcconfig"; sourceTree = "<group>"; };
+		E49BF7E6284B76F1C29282EF /* Pods-MySmashHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySmashHub.release.xcconfig"; path = "Target Support Files/Pods-MySmashHub/Pods-MySmashHub.release.xcconfig"; sourceTree = "<group>"; };
 		EBBF0BF025145A4900389AF1 /* MySmashHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySmashHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBF0BF325145A4900389AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBF0BF525145A4900389AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B24B2794A1517AC1C4DE0A9 /* Pods_MySmashHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B4198F3EA9BD7D63B171A30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06AE75D08475E1677B98E13B /* Pods_MySmashHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C120D47B5BE928C318439341 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64AA06ADA9E24DEADD9A3FAE /* Pods-MySmashHub.debug.xcconfig */,
+				E49BF7E6284B76F1C29282EF /* Pods-MySmashHub.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EBBF0BE725145A4900389AF1 = {
 			isa = PBXGroup;
 			children = (
 				EBBF0BF225145A4900389AF1 /* MySmashHub */,
 				EBBF0BF125145A4900389AF1 /* Products */,
+				C120D47B5BE928C318439341 /* Pods */,
+				8B4198F3EA9BD7D63B171A30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBBF0C0425145A4A00389AF1 /* Build configuration list for PBXNativeTarget "MySmashHub" */;
 			buildPhases = (
+				AB54A8B85406A5AA0C9A1CD7 /* [CP] Check Pods Manifest.lock */,
 				EBBF0BEC25145A4900389AF1 /* Sources */,
 				EBBF0BED25145A4900389AF1 /* Frameworks */,
 				EBBF0BEE25145A4900389AF1 /* Resources */,
+				34392212D634773C75A7951F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34392212D634773C75A7951F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySmashHub/Pods-MySmashHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySmashHub/Pods-MySmashHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySmashHub/Pods-MySmashHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB54A8B85406A5AA0C9A1CD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySmashHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBBF0BEC25145A4900389AF1 /* Sources */ = {
@@ -319,6 +388,7 @@
 		};
 		EBBF0C0525145A4A00389AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64AA06ADA9E24DEADD9A3FAE /* Pods-MySmashHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +408,7 @@
 		};
 		EBBF0C0625145A4A00389AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49BF7E6284B76F1C29282EF /* Pods-MySmashHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
